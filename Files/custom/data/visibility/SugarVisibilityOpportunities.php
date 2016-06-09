@@ -49,10 +49,10 @@ class SugarVisibilityOpportunities extends ACLVisibility
         if(!$current_user->is_admin){
             // If the current user set search parameters, the query will need to be appended to with an AND
             if($query){
-                $query .= " AND (opportunities_cstm.bestfit_status_c <> 'Completed')";
+                $query .= " AND (opportunities_cstm.bestfit_status_c = 'Completed')";
             // Otherwise just append the additional parameters
             }else{
-                $query .= " (opportunities_cstm.bestfit_status_c <> 'Completed')";
+                $query .= " (opportunities_cstm.bestfit_status_c = 'Completed')";
             }
         }		
 // -			

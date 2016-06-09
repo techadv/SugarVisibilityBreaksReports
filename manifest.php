@@ -38,7 +38,7 @@ $manifest = array(
     'name' => 'Visibility Breaks Report',
     'published_date' => '2016-06-03-11:32:00',
     'type' => 'module',
-    'version' => 1,
+    'version' => 2,
 );
 $installdefs = array(
     'id' => 'Visibility Breaks Report',
@@ -54,6 +54,16 @@ $installdefs = array(
             'from' => '<basepath>/Files/custom/Extension/modules/Opportunities/Ext/Vardefs/opportunitiesVisibility.php',
             'to' => 'custom/Extension/modules/Opportunities/Ext/Vardefs/opportunitiesVisibility.php',
         ),
+        2 =>
+        array(
+            'from' => '<basepath>/Files/custom/data/visibility/SugarVisibilityNotes.php',
+            'to' => 'custom/data/visibility/SugarVisibilityNotes.php',
+        ),
+        3 =>
+        array(
+            'from' => '<basepath>/Files/custom/Extension/modules/Notes/Ext/Vardefs/notesVisibility.php',
+            'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notesVisibility.php',
+        ),		
     ),
 	'language'=> array (
 		array(
